@@ -15,6 +15,7 @@ class MovieObject: Object {
     dynamic var title: String = ""
     dynamic var posterPath: String?
     dynamic var overview: String?
+    dynamic var voteCount: Int = 0
     dynamic var releaseDate: DateFormat?
 
     override static func primaryKey() -> String {
@@ -28,6 +29,7 @@ class MovieObject: Object {
         title = model.title
         posterPath = model.posterPath
         overview = model.overview
+        voteCount = model.voteCount
         releaseDate = model.releaseDate
     }
 }

@@ -27,7 +27,6 @@
 		F1652BDE23E74124000895E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1652BDD23E74124000895E0 /* SceneDelegate.swift */; };
 		F1652BE523E74126000895E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1652BE423E74126000895E0 /* Assets.xcassets */; };
 		F1652BE823E74126000895E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1652BE623E74126000895E0 /* LaunchScreen.storyboard */; };
-		F1652BF323E74126000895E0 /* ConnectFilm_UIKITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1652BF223E74126000895E0 /* ConnectFilm_UIKITTests.swift */; };
 		F1652BFE23E74126000895E0 /* ConnectFilm_UIKITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1652BFD23E74126000895E0 /* ConnectFilm_UIKITUITests.swift */; };
 		F17B15A723E84C5B008D55A6 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17B15A623E84C5B008D55A6 /* MovieDetailsViewController.swift */; };
 		F17B15A923E84C66008D55A6 /* MovieDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17B15A823E84C66008D55A6 /* MovieDetails.storyboard */; };
@@ -86,7 +85,6 @@
 		F1652BE723E74126000895E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1652BE923E74126000895E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1652BEE23E74126000895E0 /* ConnectFilm-UIKITTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ConnectFilm-UIKITTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1652BF223E74126000895E0 /* ConnectFilm_UIKITTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFilm_UIKITTests.swift; sourceTree = "<group>"; };
 		F1652BF423E74126000895E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1652BF923E74126000895E0 /* ConnectFilm-UIKITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ConnectFilm-UIKITUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1652BFD23E74126000895E0 /* ConnectFilm_UIKITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectFilm_UIKITUITests.swift; sourceTree = "<group>"; };
@@ -99,6 +97,7 @@
 		F19DD38023E88AAB0035E3C2 /* MovieCollection.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollection.xib; sourceTree = "<group>"; };
 		F19DD38223E88ADE0035E3C2 /* MovieCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollection.swift; sourceTree = "<group>"; };
 		F19DD38423E88CF10035E3C2 /* FavouriteMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteMoviesViewModel.swift; sourceTree = "<group>"; };
+		F19DD38623E8A9E10035E3C2 /* ConnectFilm-UIKITTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ConnectFilm-UIKITTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,8 +268,8 @@
 		F1652BF123E74126000895E0 /* ConnectFilm-UIKITTests */ = {
 			isa = PBXGroup;
 			children = (
-				F1652BF223E74126000895E0 /* ConnectFilm_UIKITTests.swift */,
 				F1652BF423E74126000895E0 /* Info.plist */,
+				F19DD38623E8A9E10035E3C2 /* ConnectFilm-UIKITTests-Bridging-Header.h */,
 			);
 			path = "ConnectFilm-UIKITTests";
 			sourceTree = "<group>";
@@ -398,6 +397,7 @@
 					};
 					F1652BED23E74126000895E0 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = F1652BD723E74123000895E0;
 					};
 					F1652BF823E74126000895E0 = {
@@ -607,7 +607,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1652BF323E74126000895E0 /* ConnectFilm_UIKITTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +803,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z562RK23JW;
 				INFOPLIST_FILE = "ConnectFilm-UIKITTests/Info.plist";
@@ -815,6 +815,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "CS.ConnectFilm-UIKITTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ConnectFilm-UIKITTests/ConnectFilm-UIKITTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectFilm-UIKIT.app/ConnectFilm-UIKIT";
@@ -827,6 +829,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z562RK23JW;
 				INFOPLIST_FILE = "ConnectFilm-UIKITTests/Info.plist";
@@ -838,6 +841,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "CS.ConnectFilm-UIKITTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ConnectFilm-UIKITTests/ConnectFilm-UIKITTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConnectFilm-UIKIT.app/ConnectFilm-UIKIT";

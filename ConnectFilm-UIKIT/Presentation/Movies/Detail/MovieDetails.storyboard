@@ -96,6 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="erf-31-fgt"/>
                     </view>
                     <connections>
+                        <outlet property="addToFavButton" destination="ZZ2-Km-Zsw" id="5YT-dB-oUX"/>
                         <outlet property="overviewText" destination="iWV-kU-eAi" id="tZh-U2-5b6"/>
                         <outlet property="posterImage" destination="K3h-FV-mSi" id="c6z-dD-Qdq"/>
                         <outlet property="releaseYear" destination="WLP-eJ-mIT" id="dnA-5v-Ife"/>

@@ -19,6 +19,7 @@ class MovieCell: UITableViewCell {
     @IBOutlet var releaseDate: UILabel!
     @IBOutlet var overviewText: UITextView!
     @IBOutlet var posterImage: UIImageView!
+    @IBOutlet var rating: UILabel!
 
     var model: Movie? {
         didSet {
@@ -35,6 +36,7 @@ class MovieCell: UITableViewCell {
     private func setTextDetails() {
         guard let model = model else { return }
         titleLabel.text = model.title
+        rating.text = "\(model.voteCount) votes"
         overviewText.text = model.overview
         let year = Calendar.current.component(.year, from: model.releaseDate!.date)
         releaseDate.text = "\(year)"

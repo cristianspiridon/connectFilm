@@ -14,6 +14,7 @@ class MovieDetailsViewController: UIViewController, Storyboarded {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var releaseYear: UILabel!
     @IBOutlet var overviewText: UILabel!
+    @IBOutlet var addToFavButton: UIButton!
 
     var model: Movie?
     weak var dataStore: MoviesDataSource?
@@ -49,5 +50,8 @@ class MovieDetailsViewController: UIViewController, Storyboarded {
     @IBAction func addToFavourites(_: Any) {
         guard let dataStore = dataStore, let model = model else { return }
         dataStore.saveToFavourites(model: model)
+
+        addToFavButton.setTitle("Added to Favourites", for: .normal)
+        addToFavButton.isEnabled = false
     }
 }

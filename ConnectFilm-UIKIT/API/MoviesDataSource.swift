@@ -50,7 +50,8 @@ final class MoviesDataSource {
                   title: $0.title,
                   posterPath: $0.posterPath,
                   overview: $0.overview,
-                  releaseDate: $0.releaseDate)
+                  releaseDate: $0.releaseDate,
+                  voteCount: $0.voteCount)
         }
     }
 }

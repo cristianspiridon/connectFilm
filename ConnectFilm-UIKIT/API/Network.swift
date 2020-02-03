@@ -30,7 +30,9 @@ final class Network {
             completion(.failure(.badURL))
             return
         }
-        
+
+        print(url.absoluteString)
+
         session.dataTask(with: url) { data, _, error in
             if let error = error {
                 completion(.failure(.unknown(error)))

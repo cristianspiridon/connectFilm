@@ -33,12 +33,26 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-l1-GD4">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feF-Zy-da4">
                                         <rect key="frame" x="0.0" y="28.5" width="402.5" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-l1-GD4">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="jdv-lp-8cN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-pY-9qu">
+                                                <rect key="frame" x="50" y="0.0" width="352.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usg-NT-RoZ">
                                         <rect key="frame" x="0.0" y="52.5" width="402.5" height="177.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -65,6 +79,7 @@
             <connections>
                 <outlet property="overviewText" destination="usg-NT-RoZ" id="gR0-l0-Leg"/>
                 <outlet property="posterImage" destination="CFt-TO-QGJ" id="iQp-DL-Waz"/>
+                <outlet property="rating" destination="hAE-pY-9qu" id="7U8-Qi-RY5"/>
                 <outlet property="releaseDate" destination="ll1-l1-GD4" id="Bl1-Ia-mDE"/>
                 <outlet property="titleLabel" destination="9Lt-R4-itN" id="IOn-Sw-2cQ"/>
             </connections>
