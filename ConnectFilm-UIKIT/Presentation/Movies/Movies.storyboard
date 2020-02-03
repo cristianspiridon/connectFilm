@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movies View Controller-->
+        <scene sceneID="k0p-Xg-Dma">
+            <objects>
+                <viewController storyboardIdentifier="MoviesViewController" id="vOu-iY-q1s" customClass="MoviesViewController" customModule="ConnectFilm_UIKIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDM-vW-IlD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dex-o2-YxQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="rJM-WD-WsK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
+                                <connections>
+                                    <outlet property="dataSource" destination="vOu-iY-q1s" id="F0r-qf-av0"/>
+                                    <outlet property="delegate" destination="vOu-iY-q1s" id="7PC-Mw-a7V"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops, no movies yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDc-hl-NRr">
+                                <rect key="frame" x="129" y="437.5" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dex-o2-YxQ" firstAttribute="leading" secondItem="HEJ-PB-ILA" secondAttribute="leading" id="FpZ-r1-GgZ"/>
+                            <constraint firstItem="HEJ-PB-ILA" firstAttribute="trailing" secondItem="dex-o2-YxQ" secondAttribute="trailing" id="GCD-cr-TDI"/>
+                            <constraint firstItem="HEJ-PB-ILA" firstAttribute="bottom" secondItem="dex-o2-YxQ" secondAttribute="bottom" id="bye-I3-Qqk"/>
+                            <constraint firstItem="sDc-hl-NRr" firstAttribute="centerY" secondItem="jDM-vW-IlD" secondAttribute="centerY" id="lCK-hd-qe5"/>
+                            <constraint firstItem="sDc-hl-NRr" firstAttribute="centerX" secondItem="jDM-vW-IlD" secondAttribute="centerX" id="rwi-Rh-cxr"/>
+                            <constraint firstItem="dex-o2-YxQ" firstAttribute="top" secondItem="HEJ-PB-ILA" secondAttribute="top" id="tiB-Hv-Nzg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HEJ-PB-ILA"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="rJM-WD-WsK" id="99n-es-eIR"/>
+                        <outlet property="noDataLabel" destination="sDc-hl-NRr" id="Qzv-8k-FoN"/>
+                        <outlet property="tableView" destination="dex-o2-YxQ" id="EHi-Tm-DUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vx-H8-xgg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="133"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_ConnectFilm_UIKIT {
+  umbrella header "Pods-ConnectFilm-UIKIT-umbrella.h"
+
+  export *
+  module * { export * }
+}

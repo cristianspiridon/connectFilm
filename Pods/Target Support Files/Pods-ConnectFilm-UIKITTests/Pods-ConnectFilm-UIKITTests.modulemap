@@ -1,0 +1,6 @@
+framework module Pods_ConnectFilm_UIKITTests {
+  umbrella header "Pods-ConnectFilm-UIKITTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

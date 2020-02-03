@@ -1,0 +1,31 @@
+PODS:
+  - Nuke (8.4.0)
+  - Realm (4.3.0):
+    - Realm/Headers (= 4.3.0)
+  - Realm/Headers (4.3.0)
+  - RealmSwift (4.3.0):
+    - Realm (= 4.3.0)
+  - SwiftFormat/CLI (0.43.5)
+
+DEPENDENCIES:
+  - Nuke
+  - Realm
+  - RealmSwift
+  - SwiftFormat/CLI
+
+SPEC REPOS:
+  trunk:
+    - Nuke
+    - Realm
+    - RealmSwift
+    - SwiftFormat
+
+SPEC CHECKSUMS:
+  Nuke: fa6f784c4f7e1c0f9313668510186c68b7af2509
+  Realm: 9357c3589555793e1860a7104a7412bca4a48d99
+  RealmSwift: 402f1e379a8ef82c635313037b043f0f06de880c
+  SwiftFormat: 352ea545e3e13cfd7a449e621c1f3c2e244d4906
+
+PODFILE CHECKSUM: dfc787f503e135d5408ae0794866077de077b000
+
+COCOAPODS: 1.8.4

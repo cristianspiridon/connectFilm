@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MovieCollection" id="Ue9-Qv-OD4" customClass="MovieCollection" customModule="ConnectFilm_UIKIT" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="576"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6W3-iL-hWO">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="576"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZXo-C3-xhE">
+                        <rect key="frame" x="10" y="10" width="282" height="376"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZXo-C3-xhE" secondAttribute="height" multiplier="3:4" id="k50-CL-D5P"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MR-Np-9Xt">
+                        <rect key="frame" x="10" y="396" width="282" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="4MR-Np-9Xt" firstAttribute="top" secondItem="ZXo-C3-xhE" secondAttribute="bottom" constant="10" id="EIW-rg-7ch"/>
+                    <constraint firstItem="4MR-Np-9Xt" firstAttribute="leading" secondItem="6W3-iL-hWO" secondAttribute="leading" constant="10" id="bq5-0g-8PX"/>
+                    <constraint firstAttribute="trailing" secondItem="ZXo-C3-xhE" secondAttribute="trailing" constant="10" id="nH3-w9-qod"/>
+                    <constraint firstItem="ZXo-C3-xhE" firstAttribute="leading" secondItem="6W3-iL-hWO" secondAttribute="leading" constant="10" id="uPR-ko-Kd5"/>
+                    <constraint firstAttribute="trailing" secondItem="4MR-Np-9Xt" secondAttribute="trailing" constant="10" id="ueI-E5-GRk"/>
+                    <constraint firstItem="ZXo-C3-xhE" firstAttribute="top" secondItem="6W3-iL-hWO" secondAttribute="top" constant="10" id="wSk-A7-Vv4"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="302" height="576"/>
+            <connections>
+                <outlet property="posterImage" destination="ZXo-C3-xhE" id="25Q-Xu-ew1"/>
+                <outlet property="title" destination="4MR-Np-9Xt" id="zFk-6F-3pd"/>
+            </connections>
+            <point key="canvasLocation" x="753.62318840579712" y="262.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Details View Controller-->
+        <scene sceneID="Abf-9b-ood">
+            <objects>
+                <viewController storyboardIdentifier="MovieDetailsViewController" id="oUY-8G-Miw" customClass="MovieDetailsViewController" customModule="ConnectFilm_UIKIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgu-Yo-iUc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUS-eN-9vU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gx-PB-UBm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="867.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K3h-FV-mSi">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="621"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="K3h-FV-mSi" secondAttribute="height" multiplier="1:1.5" id="6Gl-FL-Dhb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A movie name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6T-CR-UfW">
+                                                <rect key="frame" x="16" y="637" width="382" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-kU-eAi">
+                                                <rect key="frame" x="16" y="675" width="382" height="125.5"/>
+                                                <string key="text">Ut condimentum, arcu sed porta sagittis, nulla quam mattis erat, eget laoreet orci orci a lacus. Aenean suscipit tortor elementum sapien tincidunt, a feugiat nunc dignissim. Suspendisse in mi et mi lobortis fermentum vitae faucibus sapien. Aliquam semper mollis congue. Proin eros nulla, rutrum et elit et, semper faucibus lacus. </string>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLP-eJ-mIT">
+                                                <rect key="frame" x="16" y="830.5" width="60" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="Hum-OS-Zn0"/>
+                                                    <constraint firstAttribute="height" constant="21" id="QlN-pa-VGv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ2-Km-Zsw">
+                                                <rect key="frame" x="264" y="830.5" width="120" height="30"/>
+                                                <state key="normal" title="Add to Favourites"/>
+                                                <connections>
+                                                    <action selector="addToFavourites:" destination="oUY-8G-Miw" eventType="touchUpInside" id="JEP-X8-VXP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="T6T-CR-UfW" firstAttribute="top" secondItem="K3h-FV-mSi" secondAttribute="bottom" constant="16" id="2yl-a6-i9b"/>
+                                            <constraint firstAttribute="trailing" secondItem="K3h-FV-mSi" secondAttribute="trailing" id="6xo-Kx-IdB"/>
+                                            <constraint firstItem="K3h-FV-mSi" firstAttribute="top" secondItem="3Gx-PB-UBm" secondAttribute="top" id="GND-7h-2ki"/>
+                                            <constraint firstItem="iWV-kU-eAi" firstAttribute="top" secondItem="T6T-CR-UfW" secondAttribute="bottom" constant="8" id="IBF-8h-58j"/>
+                                            <constraint firstItem="T6T-CR-UfW" firstAttribute="leading" secondItem="3Gx-PB-UBm" secondAttribute="leading" constant="16" id="NCu-MR-DxI"/>
+                                            <constraint firstItem="iWV-kU-eAi" firstAttribute="leading" secondItem="3Gx-PB-UBm" secondAttribute="leading" constant="16" id="RaK-1c-eui"/>
+                                            <constraint firstItem="WLP-eJ-mIT" firstAttribute="leading" secondItem="3Gx-PB-UBm" secondAttribute="leading" constant="16" id="Tqb-q2-wzV"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZZ2-Km-Zsw" secondAttribute="trailing" constant="30" id="XyU-2p-vr3"/>
+                                            <constraint firstAttribute="trailing" secondItem="iWV-kU-eAi" secondAttribute="trailing" constant="16" id="aZy-34-eAa"/>
+                                            <constraint firstAttribute="bottom" secondItem="WLP-eJ-mIT" secondAttribute="bottom" constant="16" id="fXp-pW-yan"/>
+                                            <constraint firstItem="WLP-eJ-mIT" firstAttribute="top" secondItem="iWV-kU-eAi" secondAttribute="bottom" constant="30" id="lb7-3q-n42"/>
+                                            <constraint firstItem="ZZ2-Km-Zsw" firstAttribute="top" secondItem="iWV-kU-eAi" secondAttribute="bottom" constant="30" id="lyK-Th-ZfA"/>
+                                            <constraint firstAttribute="trailing" secondItem="T6T-CR-UfW" secondAttribute="trailing" constant="16" id="prI-D0-HAh"/>
+                                            <constraint firstItem="K3h-FV-mSi" firstAttribute="leading" secondItem="3Gx-PB-UBm" secondAttribute="leading" id="wbO-bd-tkP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Gx-PB-UBm" firstAttribute="top" secondItem="sUS-eN-9vU" secondAttribute="top" id="6GU-De-Jmn"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Gx-PB-UBm" secondAttribute="trailing" id="7yr-Uz-z1O"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Gx-PB-UBm" secondAttribute="bottom" constant="30" id="85R-E8-XZU"/>
+                                    <constraint firstItem="3Gx-PB-UBm" firstAttribute="leading" secondItem="sUS-eN-9vU" secondAttribute="leading" id="dBW-JK-eFf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sUS-eN-9vU" secondAttribute="bottom" id="0nh-CJ-UdS"/>
+                            <constraint firstItem="sUS-eN-9vU" firstAttribute="leading" secondItem="erf-31-fgt" secondAttribute="leading" id="8mJ-r9-CxB"/>
+                            <constraint firstItem="3Gx-PB-UBm" firstAttribute="width" secondItem="erf-31-fgt" secondAttribute="width" id="Rdh-Bc-VaL"/>
+                            <constraint firstItem="erf-31-fgt" firstAttribute="trailing" secondItem="sUS-eN-9vU" secondAttribute="trailing" id="ZW7-Mz-zoL"/>
+                            <constraint firstItem="sUS-eN-9vU" firstAttribute="top" secondItem="pgu-Yo-iUc" secondAttribute="top" id="zJa-f4-oJ8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="erf-31-fgt"/>
+                    </view>
+                    <connections>
+                        <outlet property="overviewText" destination="iWV-kU-eAi" id="tZh-U2-5b6"/>
+                        <outlet property="posterImage" destination="K3h-FV-mSi" id="c6z-dD-Qdq"/>
+                        <outlet property="releaseYear" destination="WLP-eJ-mIT" id="dnA-5v-Ife"/>
+                        <outlet property="titleLabel" destination="T6T-CR-UfW" id="KKD-uS-Y9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHp-NI-u0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.75362318840581" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+</document>
