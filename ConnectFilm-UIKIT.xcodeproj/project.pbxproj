@@ -36,6 +36,8 @@
 		F19DD38123E88AAB0035E3C2 /* MovieCollection.xib in Resources */ = {isa = PBXBuildFile; fileRef = F19DD38023E88AAB0035E3C2 /* MovieCollection.xib */; };
 		F19DD38323E88ADE0035E3C2 /* MovieCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD38223E88ADE0035E3C2 /* MovieCollection.swift */; };
 		F19DD38523E88CF10035E3C2 /* FavouriteMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DD38423E88CF10035E3C2 /* FavouriteMoviesViewModel.swift */; };
+		F19DD39523E8E73F0035E3C2 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1052DA823E825D1001726DD /* MoviesListViewModel.swift */; };
+		F19DD39623E8E7850035E3C2 /* MoviesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1052D9823E7804A001726DD /* MoviesDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -607,6 +609,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19DD39623E8E7850035E3C2 /* MoviesDataSource.swift in Sources */,
+				F19DD39523E8E73F0035E3C2 /* MoviesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
